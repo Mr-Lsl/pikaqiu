@@ -1,0 +1,67 @@
+<header class="header">
+    <ul>
+        <li><i class="iconfont">&#xe790;</i></li>
+        <li>
+            <p id="ps"><span class="bg">热点</span><span>关注</span></p>
+        </li>
+        <li><i class="iconfont">&#xe60c;</i></li>
+    </ul>
+</header>
+<div class="conter">
+    <div class="swiper-container1" style="height: 100%">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="content">
+                    <div class="nav">
+                        <ul id="move">
+                            <li class="le">足球现场</li>
+                            <li>足球美女</li>
+                            <li>足球直播</li>
+                        </ul>
+                    </div>
+                    <div class="cons">
+                        <div class="swiper-container2">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div id="wrapper">
+                                        <div id="scroller">
+                                            <div id="pullDown" class="">
+                                                <div class="pullDownLabel"></div>
+                                            </div>
+                                            <div class="pulldown-tips">
+                                                <img src="../images/ajax-loader.gif" alt="">
+                                                <span>下拉刷新</span>
+                                            </div>
+                                            <div class="dls">
+                                                <dl ng-repeat='item in data' ui-sref="detail({id:item.id})">
+                                                    <dt>
+                                                        <img ng-src={{item.img}} alt="">
+                                                    </dt>
+                                                    <dd>
+                                                        <span>{{item.title}}</span>
+                                                    </dd>
+                                                </dl>
+                                            </div>
+                                            <div class="pullup-tips">
+                                                <img src="../images/arrow.png" alt="">
+                                                <span>上拉加载</span>
+                                            </div>
+                                            <div id="pullUp">
+                                                <div class="pullUpLabel"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide"><h2>足球美女~~~~~~~~~~~~</h2></div>
+                                <div class="swiper-slide"><h2>足球直播~~~~~~~~~~~~</h2></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <h2>关注~~~~~~~~~~~~~~~~~~</h2>
+            </div>
+        </div>
+    </div>
+</div>
